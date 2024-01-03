@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import "./InstantConsultation.css";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import FindDoctorSearchIC from "./FindDoctorSearchIC/FindDoctorSearchIC";
+import FindDoctorSearchIC from "../FindDoctorSearchIC/FindDoctorSearch";
 import DoctorCardIC from "./DoctorCardIC/DoctorCardIC";
 
 const InstantConsultation = () => {

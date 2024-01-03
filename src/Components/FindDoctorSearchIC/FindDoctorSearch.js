@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./FindDoctorSearchIC.css";
-import doctorsImg from "../../../img/doctors.png";
-import { useNavigate, Navigate } from "react-router-dom";
-const initSpeciality = ["Dentist", "Gynecologist/obstetrician", "General Physician", "Dermatologist", "Ear-nose-throat (ent) Specialist", "Homeopath", "Ayurveda"];
+import "./FindDoctorSearch.css";
+import doctorsImg from "../../img/doctors.png";
+import stethoscope from "../../img/stethoscope.png";
+import { useNavigate } from "react-router-dom";
+const initSpeciality = ["Dentist", "Gynecologist/obstetrician", "General Physician", "Dermatologist", "Ear-nose-throat (ent) Specialist", "Homeopath"];
 
 const FindDoctorSearchIC = () => {
     const [doctorResultHidden, setDoctorResultHidden] = useState(true);
@@ -47,7 +48,7 @@ const FindDoctorSearchIC = () => {
                             {specialities.map((speciality) => (
                                 <div className="search-doctor-result-item" key={speciality} onMouseDown={() => handleDoctorSelect(speciality)}>
                                     <span>
-                                        <img src={process.env.PUBLIC_URL + "/images/search.svg"} alt="" style={{ height: "10px", width: "10px" }} width="12" />
+                                        <img src={stethoscope} alt="" style={{ height: "20px", width: "20px" }} width="20" />
                                     </span>
                                     <span>{speciality}</span>
                                     <span>SPECIALITY</span>
